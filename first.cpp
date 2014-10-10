@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>//могу редактировать,Ром
 
 int main()
 {
