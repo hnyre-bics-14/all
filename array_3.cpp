@@ -1,6 +1,6 @@
 #include <iostream>
-#include <windows.h>
-#include <ctime>
+#include <windows.h> //для задержки экрана
+#include <ctime> //для генерации семя рандома
 
 using std::cout;
 
@@ -8,13 +8,15 @@ using std::cout;
 int main()
 {
 	const int n = 5;
-	const int MOD = 20;
-	srand(time(0));
+	const int MOD = 20; //для генерации
+	srand(time(0)); //генерация семя
 
-	int mas[n][n];
+	int mas[n][n]; //создание массива
+	/*заполнение массива случайными числами*/
 	for(int i=0; i<n; i++)
 		for(int j=0; j<n; j++)
 			mas[i][j] = rand() % MOD - MOD/2;
+	/*вывод массива на экран*/
 	for(int i=0; i<n; i++)
 	{
 		for(int j=0; j<n; j++)
@@ -22,6 +24,7 @@ int main()
 		cout << "\n";
 	}
 
+	/*сами расчёты*/
 	int min_i, min_j;
 	int max_i;
 	for(int j=0; j<n; j++)
