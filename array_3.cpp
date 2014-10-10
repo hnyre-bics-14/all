@@ -47,6 +47,6 @@ int main()
 
 	printf("Minimal element have index [%d][%d] (numeration start from 0)\n", min_i, min_j);
 
-	system("PAUSE");
-	return 0;
+	system("PAUSE"); //задержка экрана
+	return 0; //и выход)
 }
